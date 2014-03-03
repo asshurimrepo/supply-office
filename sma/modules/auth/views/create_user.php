@@ -48,10 +48,10 @@ $(function() {
   <label class="control-label" for="role"><?php echo $this->lang->line("user_role"); ?></label>
   <div class="controls">
       <div class="btn-group user-role" data-toggle="buttons-radio">
-    <button type="button" value="1" class="btn"><?php echo $this->lang->line("owner"); ?></button>
+    <!-- <button type="button" value="1" class="btn"><?php echo $this->lang->line("owner"); ?></button> -->
     <button type="button" value="2" class="btn"><?php echo $this->lang->line("admin"); ?></button>
-    <button type="button" value="3" class="btn"><?php echo $this->lang->line("purchaser"); ?></button>
-    <button type="button" value="4" class="btn"><?php echo $this->lang->line("salesman"); ?></button>
+    <!-- <button type="button" value="3" class="btn"><?php echo $this->lang->line("purchaser"); ?></button> -->
+    <!-- <button type="button" value="4" class="btn"><?php echo $this->lang->line("salesman"); ?></button> -->
     <button type="button" value="5" class="btn"><?php echo $this->lang->line("user"); ?></button>
     </div>
     <input type="hidden" name="role" id="role" value="<?php /* echo $group->group_id; */ ?>">

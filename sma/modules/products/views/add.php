@@ -83,12 +83,15 @@ $(document).ready(function(){
 
 <div class="control-group">
   <label class="control-label" for="cost"><?php echo $this->lang->line("product_cost"); ?></label>
-  <div class="controls"> <?php echo form_input($cost, (isset($_POST['cost']) ? $_POST['cost'] : ""), 'class="span4 tip" id="cost" title="'.$this->lang->line("pr_cost_tip").'" required="required" data-error="'.$this->lang->line("product_cost").' '.$this->lang->line("is_required").'"'); ?> </div>
+  <div class="controls"> <?php echo form_input($cost, (isset($_POST['cost']) ? $_POST['cost'] : ""), 'class="span4 tip" id="cost"  required="required" data-error="'.$this->lang->line("product_cost").' '.$this->lang->line("is_required").'"'); ?> </div>
 </div>
-<div class="control-group">
-  <label class="control-label" for="price"><?php echo $this->lang->line("product_price"); ?></label>
-  <div class="controls"> <?php echo form_input($price, (isset($_POST['price']) ? $_POST['price'] : ""), 'class="span4 tip" id="price" title="'.$this->lang->line("pr_price_tip").'" required="required" data-error="'.$this->lang->line("product_price").' '.$this->lang->line("is_required").'"'); ?> </div>
+
+
+<div class="control-group hide">
+  <label class="control-label" for="price">Product Price</label>
+  <div class="controls"> <input type="text" name="price" value="1" id="price" class="span4 tip" title="" data-error="Product Price is required or need attention." data-original-title="&lt;em&gt;pr_price_tip&lt;/em&gt;"> </div>
 </div>
+
 <div class="control-group">
   <label class="control-label" for="alert_quantity"><?php echo $this->lang->line("alert_quantity"); ?></label>
   <div class="controls"> <?php echo form_input($alert_quantity, (isset($_POST['alert_quantity']) ? $_POST['alert_quantity'] : ""), 'class="span4 tip" id="alert_quantity" title="'.$this->lang->line("alert_quantity_tip").'" required="required" data-error="'.$this->lang->line("alert_quantity").' '.$this->lang->line("is_required").'"'); ?> </div>
@@ -109,7 +112,7 @@ $(document).ready(function(){
   </div>
 </div>
 
-<div class="control-group">
+<!-- <div class="control-group">
   <label class="control-label" for="cf1"><?php echo $this->lang->line("pcf1"); ?></label>
   <div class="controls"> <?php echo form_input('cf1', '', 'class="span4" id="cf1"');?>
   </div>
@@ -138,7 +141,7 @@ $(document).ready(function(){
   <label class="control-label" for="cf6"><?php echo $this->lang->line("pcf6"); ?></label>
   <div class="controls"> <?php echo form_input('cf6', '', 'class="span4" id="cf6"');?>
   </div>
-</div> 
+</div>  -->
 
 <div class="control-group">
   <div class="controls"> <?php echo form_submit('submit', $this->lang->line("add_product"), 'class="btn btn-primary"');?> </div>

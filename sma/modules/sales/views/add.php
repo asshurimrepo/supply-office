@@ -858,16 +858,13 @@ $(document).ready(function(){
   <div class="controls">  <?php 
 	 $cu[""] = "";
 	   		foreach($customers as $customer){
-				if($customer->company == "-" || !$customer->company) {
-					$cu[$customer->id] = $customer->name." (P)";
-				} else {
-					$cu[$customer->id] = $customer->company." (C)";
-				}
+				
+					$cu[$customer->id] = $customer->name;
 			}
 		echo form_dropdown('customer', $cu, (isset($_POST['customer']) ? $_POST['customer'] : ""), 'id="customer_s" data-placeholder="'.$this->lang->line("select").' '.$this->lang->line("customer").'" required="required" data-error="'.$this->lang->line("customer").' '.$this->lang->line("is_required").'"'); ?> </div>
 </div>
 <?php if(TAX2) { ?>
-<div class="control-group">
+<div class="control-group hide">
   <label class="control-label" id="tax2_l"><?php echo $this->lang->line("tax2"); ?></label>
   <div class="controls">  <?php 
 	  $tr[""] = "";
@@ -966,7 +963,7 @@ $(document).ready(function(){
 </div>
 
 </div>
-<div class="span5">
+<div class="span5 hide">
 
 <div class="control-group inverse" style="margin-bottom:5px; cursor: default;">
   <label class="control-label" style="cursor: default;"><?php echo $this->lang->line("total"); ?></label>

@@ -22,7 +22,7 @@
               'class'       => 'span4 tip',
 			  'title'		=> $this->lang->line("bypass") ,
 			  'required'	=> 'required',
-			  'data-error'	=> $this->lang->line("company").' '.$this->lang->line("is_required")
+			  'data-error'	=> $this->lang->line("department").' '.$this->lang->line("is_required")
             );
 			$address = array(
               'name'        => 'address',
@@ -141,7 +141,7 @@ $(function() {
   </div>
 </div> 
 <div class="control-group">
-  <label class="control-label" for="company"><?php echo $this->lang->line("company"); ?></label>
+  <label class="control-label" for="company"><?php echo $this->lang->line("department"); ?></label>
   <div class="controls"> <?php echo form_input($company);?>
   </div>
 </div> 

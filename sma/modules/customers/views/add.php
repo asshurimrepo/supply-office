@@ -58,7 +58,7 @@ $(function() {
   <div class="controls"> <?php echo form_input($country, '', 'class="span4" id="country" pattern=".{2,55}" required="required" data-error="'.$this->lang->line("country").' '.$this->lang->line("is_required").'"');?>
   </div>
 </div> 
-<div class="control-group">
+<!-- <div class="control-group">
   <label class="control-label" for="cf1"><?php echo $this->lang->line("ccf1"); ?></label>
   <div class="controls"> <?php echo form_input('cf1', '', 'class="span4" id="cf1"');?>
   </div>
@@ -87,7 +87,7 @@ $(function() {
   <label class="control-label" for="cf6"><?php echo $this->lang->line("ccf6"); ?></label>
   <div class="controls"> <?php echo form_input('cf6', '', 'class="span4" id="cf6"');?>
   </div>
-</div> 
+</div>  -->
 
 <div class="control-group">
   <div class="controls"> <?php echo form_submit('submit', $this->lang->line("add_customer"), 'class="btn btn-primary"');?> </div>

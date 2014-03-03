@@ -169,7 +169,7 @@ $(function() {
   <div class="controls"> <?php echo form_input($country);?>
   </div>
 </div> 
-<div class="control-group">
+<!-- <div class="control-group">
   <label class="control-label" for="cf1"><?php echo $this->lang->line("ccf1"); ?></label>
   <div class="controls"> <?php echo form_input($cf1);?>
   </div>
@@ -198,7 +198,7 @@ $(function() {
   <label class="control-label" for="cf6"><?php echo $this->lang->line("ccf6"); ?></label>
   <div class="controls"> <?php echo form_input($cf6);?>
   </div>
-</div> 
+</div>  -->
 
 <div class="control-group">
   <div class="controls"> <?php echo form_submit('submit', $this->lang->line("update_customer"), 'class="btn btn-primary"');?> </div>

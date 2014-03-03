@@ -106,7 +106,7 @@ $('#col_1').show();
         <li><a href="index.php?module=home"><?php echo $this->lang->line('home'); ?></a></li>
         <li><a href="index.php?module=calendar"><?php echo $this->lang->line('calendar'); ?></a></li>
         <?php if(file_exists('sma/modules/pos/controllers/pos.php') && is_dir('sma/modules/pos')) {
-		echo '<li><a href="index.php?module=pos" class="btn btn-success hbtn">Point of Sale</a></li>'; }
+		echo ''; }
 		if (ALERT_NO > 0) { echo "<li><a class=\"btn btn-warning hbtn\" href=\"index.php?module=reports&view=products\">".ALERT_NO." ".$this->lang->line('product_alerts')."</a></li>"; } 
        if(DEMO) { echo '<li><a class="btn btn-success hbtn" href="http://codecanyon.net/item/stock-manager-advance-invoice-inventory-system/3647040?ref=tecdiary" target="_blank">Buy Now</a></li>'; }
 		?>	
@@ -124,7 +124,7 @@ $('#col_1').show();
           <li><a href="<?php echo $this->config->base_url(); ?>index.php?module=products"><?php echo $this->lang->line('list_products'); ?></a></li>
           <li><a href="<?php echo $this->config->base_url(); ?>index.php?module=products&amp;view=add"><?php echo $this->lang->line('new_product'); ?></a></li>
           <li><a href="<?php echo $this->config->base_url(); ?>index.php?module=products&amp;view=upload_csv"><?php echo $this->lang->line('add_by_csv'); ?></a></li>
-          <li><a href="<?php echo $this->config->base_url(); ?>index.php?module=products&amp;view=update_price"><?php echo $this->lang->line('update_price'); ?></a></li>
+          <!-- <li><a href="<?php echo $this->config->base_url(); ?>index.php?module=products&amp;view=update_price"><?php echo $this->lang->line('update_price'); ?></a></li> -->
           <li><a href="<?php echo $this->config->base_url(); ?>index.php?module=products&amp;view=damage_products"><?php echo $this->lang->line('damage_products'); ?></a></li>
         </ul>
       </li>
@@ -205,9 +205,9 @@ $('#col_1').show();
           <li><a href="<?php echo $this->config->base_url(); ?>index.php?module=reports&view=warehouse_stock"><?php echo $this->lang->line('warehouse_stock_value'); ?></a></li>
           <li><a href="<?php echo $this->config->base_url(); ?>index.php?module=reports&view=products"><?php echo $this->lang->line('product_alerts'); ?></a></li>
           <li><a href="<?php echo $this->config->base_url(); ?>index.php?module=reports&view=purchases"><?php echo $this->lang->line('purchase_report'); ?></a></li>
-          <li><a href="<?php echo $this->config->base_url(); ?>index.php?module=reports&view=daily_sales"><?php echo $this->lang->line('daily_sales'); ?></a></li>
-          <li><a href="<?php echo $this->config->base_url(); ?>index.php?module=reports&view=monthly_sales"><?php echo $this->lang->line('monthly_sales'); ?></a></li>
-          <li><a href="<?php echo $this->config->base_url(); ?>index.php?module=reports&view=sales"><?php echo $this->lang->line('sales_report'); ?></a></li>
+          <!-- <li><a href="<?php echo $this->config->base_url(); ?>index.php?module=reports&view=daily_sales"><?php echo $this->lang->line('daily_sales'); ?></a></li> -->
+          <!-- <li><a href="<?php echo $this->config->base_url(); ?>index.php?module=reports&view=monthly_sales"><?php echo $this->lang->line('monthly_sales'); ?></a></li> -->
+          <!-- <li><a href="<?php echo $this->config->base_url(); ?>index.php?module=reports&view=sales"><?php echo $this->lang->line('sales_report'); ?></a></li> -->
         </ul>
       </li>
     </ul>

@@ -29,7 +29,7 @@ $(function() {
   </div>
 </div> 
 <div class="control-group">
-  <label class="control-label" for="company"><?php echo $this->lang->line("company"); ?></label>
+  <label class="control-label" for="company"><?php echo $this->lang->line("department"); ?></label>
   <div class="controls"> <?php echo form_input($company, '', 'class="span4 tip" title="'.$this->lang->line("bypass").'" id="company" pattern=".{1,55}" required="required" data-error="'.$this->lang->line("company").' '.$this->lang->line("is_required").'"');?>
   </div>
 </div> 

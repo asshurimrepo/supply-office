@@ -37,7 +37,7 @@
 // The following values will probably need to be changed.
 $db['default']['username'] = "root";
 $db['default']['password'] = "damjdtdw";
-$db['default']['database'] = "supply_db";
+$db['default']['database'] = "bdiggers_sma";
 
 // The following values can probably stay the same.
 $db['default']['hostname'] = "localhost";

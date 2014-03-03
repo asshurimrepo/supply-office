@@ -19,11 +19,7 @@
 <?php if($success_message) { echo "<div class=\"alert alert-success\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\">&times;</button>" . $success_message . "</div>"; } ?>
 
 <h3 class="title"><?php echo $page_title; ?></h3>
-<?php echo form_open("module=home&view=update_comment"); ?>
-<h4 style="margin-top:10px;"><?php echo $this->lang->line("admin_comment"); ?></h4>
-<?php echo form_textarea('comment', html_entity_decode($com->comment), 'class="input-block-level" id="note"');?>
-<button type="submit" class="btn btn-primary" style="float:right; margin-top: 5px;"><?php echo $this->lang->line("update_comment"); ?></button>
-<?php echo form_close(); ?> 
+
 <div class="clearfix"></div>
 <?php echo $calendar; ?>
 <div class="clearfix"></div>
@@ -64,18 +60,18 @@
 									<span><span><?php echo $this->lang->line("new_purchase"); ?></span></span>
 								</a>
 							</li>
-                            <li>
+                         <!--    <li>
 								<a class="tip" href="index.php?module=sales" title="<?php echo $this->lang->line("invoices"); ?>">
 									<i><img src="<?php echo $this->config->base_url(); ?>assets/img/icons/sales.png" alt="" /></i>
 									<span><span><?php echo $this->lang->line("sales"); ?></span></span>
 								</a>
-							</li>
-                            <li>
+							</li> -->
+                          <!--   <li>
 								<a class="tip" href="index.php?module=sales&view=add" title="<?php echo $this->lang->line("new_sale"); ?>">
 									<i><img src="<?php echo $this->config->base_url(); ?>assets/img/icons/sale_add.png" alt="" /></i>
 									<span><span><?php echo $this->lang->line("new_sale"); ?></span></span>
 								</a>
-							</li>
+							</li> -->
                             <li>
 								<a class="tip" href="index.php?module=reports&view=overview" title="<?php echo $this->lang->line("reports"); ?>">
 									<i><img src="<?php echo $this->config->base_url(); ?>assets/img/icons/report.png" alt="" /></i>
@@ -108,7 +104,7 @@
 									<span><span><?php echo $this->lang->line("change_password"); ?></span></span>
 								</a>
 							</li>
-							<li>
+							<!-- <li>
 								<a class="tip" href="index.php?module=billers" title="<?php echo $this->lang->line("billers"); ?>">
 									<i><img src="<?php echo $this->config->base_url(); ?>assets/img/icons/billers.png" alt="" /></i>
 									<span><span><?php echo $this->lang->line("billers"); ?></span></span>
@@ -119,7 +115,7 @@
 									<i><img src="<?php echo $this->config->base_url(); ?>assets/img/icons/biller_add.png" alt="" /></i>
 									<span><span><?php echo $this->lang->line("new_biller"); ?></span></span>
 								</a>
-							</li>
+							</li> -->
                             
 							<li>
 								<a class="tip" href="index.php?module=customers" title="<?php echo $this->lang->line("customers"); ?>">

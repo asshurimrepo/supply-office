@@ -393,6 +393,7 @@ function pdf()
 			
 		if ($this->form_validation->run() == true)
 		{
+			
 			$inv_date = trim($this->input->post('date'));
 			if(JS_DATE == 'dd-mm-yyyy' || JS_DATE == 'dd/mm/yyyy') {
 				$date = substr($inv_date, -4)."-".substr($inv_date, 3, 2)."-".substr($inv_date, 0, 2); 

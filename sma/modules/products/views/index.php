@@ -98,6 +98,16 @@
             });
                     
 </script>
+
+
+<style type="text/css">
+	
+	#fileData tr th:nth-child(5), #fileData tr td:nth-child(5){
+		display: none;
+	}
+
+</style>
+
         
 <?php if($message) { echo "<div class=\"alert alert-error\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\">&times;</button>" . $message . "</div>"; } ?>
 <?php if($success_message) { echo "<div class=\"alert alert-success\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\">&times;</button>" . $success_message . "</div>"; } ?>

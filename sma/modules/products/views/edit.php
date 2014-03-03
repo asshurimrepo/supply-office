@@ -86,7 +86,7 @@ $(document).ready(function(){
   <label class="control-label" for="cost"><?php echo $this->lang->line("product_cost"); ?></label>
   <div class="controls"> <?php echo form_input('cost', $product->cost, 'class="span4 tip" id="cost" title="'.$this->lang->line("pr_cost_tip").'" required="required" data-error="'.$this->lang->line("product_cost").' '.$this->lang->line("is_required").'"'); ?> </div>
 </div>
-<div class="control-group">
+<div class="control-group hide">
   <label class="control-label" for="price"><?php echo $this->lang->line("product_price"); ?></label>
   <div class="controls"> <?php echo form_input('price', $product->price, 'class="span4 tip" id="price" title="'.$this->lang->line("pr_price_tip").'" required="required" data-error="'.$this->lang->line("product_price").' '.$this->lang->line("is_required").'"'); ?> </div>
 </div>
@@ -105,7 +105,7 @@ $(document).ready(function(){
   </div>
 </div>
 
-<div class="control-group">
+<!-- <div class="control-group">
   <label class="control-label" for="cf1"><?php echo $this->lang->line("pcf1"); ?></label>
   <div class="controls"> <?php echo form_input('cf1', $product->cf1, 'class="span4" id="cf1"');?>
   </div>
@@ -134,7 +134,7 @@ $(document).ready(function(){
   <label class="control-label" for="cf6"><?php echo $this->lang->line("pcf6"); ?></label>
   <div class="controls"> <?php echo form_input('cf6', $product->cf6, 'class="span4" id="cf6"');?>
   </div>
-</div> 
+</div>  -->
 
 <div class="control-group">
   <div class="controls"> <?php echo form_submit('submit', $this->lang->line("update_product"), 'class="btn btn-primary"');?> </div>
